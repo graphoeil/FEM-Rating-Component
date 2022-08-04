@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* /////////////////////////////// */
+/*               BODY              */
+/* /////////////////////////////// */
+body,html{ -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; height: 100%; 
+	background-color: var(--blackBackground); font-family: var(--overpass); }
+#root{ height: 100%; }
+*{ box-sizing: border-box; text-decoration: none; outline: none; }
+
+/* /////////////////////////////// */
+/*           FONTS & COLORS        */
+/* /////////////////////////////// */
+:root{
+	/* Fonts */
+	--overpass:'Overpass', sans-serif;
+	/* Colors */
+	--orange:#fc7613;
+	--darkGrey:#262f38;
+	--lightGrey:#767f88;
+	--blackBackground:#141519;
+}
+
+/* /////////////////////////////// */
+/*           GLOBAL CLASSES        */
+/* /////////////////////////////// */
+main{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.radialGradiant{
+	background: #3a3a3a;
+	background: radial-gradient(ellipse at top,  #48566b 0%,#171e28 80%);
+}
